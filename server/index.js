@@ -23,6 +23,7 @@ app.use(express.static(path.resolve(__dirname, '../dist')));
 // Routes
 app.get('/', (request, response) => {
 	const initialState = {
+    userId: '',
 		currentMessage: '',
     messages: []
   };
@@ -32,7 +33,7 @@ app.get('/', (request, response) => {
       <App />
     </Provider>
   );
-	
+
   response.render('app', {
     app: appContent,
     initialState: JSON.stringify(initialState)
