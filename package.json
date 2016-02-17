@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "run test",
-  	"start-linux-dev": "NODE_ENV=development nodemon --exec babel-node index.js -e js,handlebars",
-	"start-windows-dev": "set NODE_ENV=development&& nodemon --exec babel-node index.js -e js, handlebars",
-  	"webpack-dev": "babel-node webpack.development.js"
+    "start-linux-dev": "NODE_ENV=development nodemon --exec babel-node index.js -e js,handlebars",
+    "start-windows-dev": "set NODE_ENV=development&& nodemon --exec babel-node index.js -e js, handlebars",
+    "webpack-dev": "babel-node webpack.development.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
     "react-redux": "^4.4.0",
-    "redux": "^3.3.1"
+    "redux": "^3.3.1",
+    "socket.io": "^1.4.5"
   }
 }
